@@ -1,0 +1,7 @@
+E 2 TA
+A 3 +TA
+T 2 FB
+B 3 *FB
+F 3 (E)
+F 1 i
+F 1 n
