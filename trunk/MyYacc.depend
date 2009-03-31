@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1238478916 source:d:\zxd\myyacc\main.cpp
+	<iostream>
+	<vector>
+	<map>
+
