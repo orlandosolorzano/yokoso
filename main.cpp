@@ -6,34 +6,28 @@
 
 using namespace std;
 
-typedef map<string, int> type_symbolMap;
-typedef pair<int, int> type_position;
-typedef set<string> type_symbolSet;
-
-class Production {
-    private vector<string> rightSymbols;
-    private type_symbolSet predictSet;
-
-    public Production () {
-    }
-
-    public void addSymbol(string symbol) {
-        rightSymbols.push_back(symbol);
-    }
-
-    public void addPredict(string symbol) {
-    }
-};
+typedef map<string, int> SymbolMap;
+typedef pair<int, int> Position;
+typedef set<string> SymbolSet;
+typedef vector<string> Production;
 
 class Nonterminal {
+    //Store a nonterminal.
     string symbol;
-    vector<production> productions;
+    //Store symbols on the right of production.
+    vector<Production> productions;
+    //Store the positions which the nonterminal appears.
     vector<type_position> positions;
+    //Mark wheather the nonterminal can produce null.
     bool none;
 
     Nonterminal(string symbol) {
         this.symbol = symbol;
     }
+
+
+
+
 };
 
 vector<nonterminal> nonterminals;
@@ -45,14 +39,13 @@ type_symbolMap nonterminalMap;
 int proNum, nonNum;
 
 void init() {
-    int i, j, k;
     freopen("in.txt", "r", stdin);
-//    for (i = 0; i < NUM_NOT; i++) {
-//        cin >> ch;
-//        notion.push_back(ch);
-//    }
-    nonNum = 0;
+
+    int i, j, k;
+
     cin >> proNum;
+    nonNum = 0;
+
     for (i = 0; i < proNUM; i++) {
         char symbol;
         cin >> symbol;
