@@ -6,37 +6,6 @@
 
 using namespace std;
 
-typedef map<string, int> SymbolMap;
-typedef pair<int, int> Position;
-typedef set<string> SymbolSet;
-typedef vector<string> Production;
-
-class Nonterminal {
-    //Store a nonterminal.
-    string symbol;
-    //Store symbols on the right of production.
-    vector<Production> productions;
-    //Store the positions which the nonterminal appears.
-    vector<type_position> positions;
-    //Mark wheather the nonterminal can produce null.
-    bool none;
-
-    Nonterminal(string symbol) {
-        this.symbol = symbol;
-    }
-
-
-
-
-};
-
-vector<nonterminal> nonterminals;
-vector<type_symbolSet> firstSet;
-vector<type_symbolSet> fellowSet;
-
-type_symbolMap nonterminalMap;
-
-int proNum, nonNum;
 
 void init() {
     freopen("in.txt", "r", stdin);
