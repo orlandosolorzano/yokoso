@@ -21,3 +21,19 @@
 
 1238716513 f:\zxd\projects\canto\yokoso\nonterminal.h
 
+1238744716 source:e:\zxd\yokoso\main.cpp
+	"globaldef.h"
+	"Nonterminal.h"
+
+1238744265 e:\zxd\yokoso\globaldef.h
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<string>
+
+1238744633 e:\zxd\yokoso\nonterminal.cpp
+	"globaldef.h"
+
+1238745669 e:\zxd\yokoso\nonterminal.h
+
