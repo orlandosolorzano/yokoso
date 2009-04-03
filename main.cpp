@@ -1,11 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <set>
-#include <string>
-
-using namespace std;
-
 #include "globaldef.h"
 #include "Nonterminal.h"
 
@@ -16,8 +8,6 @@ vector<SymbolSet> fellowSet;
 SymbolMap nonterminalMap;
 
 int nonSize, proSize;
-
-
 
 void init() {
     freopen("in.txt", "r", stdin);
@@ -56,34 +46,33 @@ void init() {
     }
 }
 
-//set<char, compare> first(int i) {
-//    if (!first_cal[i] == true) {
-//        char ch = product[i][0];
-//
-//        if (notion_map.find(ch) == notion_map.end()) {
-//            first_set[i].insert(ch);
-//        } else {
-//            pair<multimap<char, int>::iterator, multimap<char, int>::iterator> not_pro = notion_map.equal_range(ch);
-//            for(it_map = not_pro.first; it_map != not_pro.second; it_map++){
-//                int no_pro = it_map->second;
-//                if (none[i]) {
-//                    set<char, compare> tmpFirst = first(no_pro);
-//                    set<char, compare> tmpRes;
-//                    set_union(first_set[i].begin(), first_set[i].end(), tmpFirst.begin(), tmpFirst.end(), tmpRes, compare());
-//                    first_set[i] = tmpRes;
-//                } else {
-//                    first_set[i].erase('_');
-//                    set<char, compare> tmpFirst = first(no_pro);
-//                    set<char, compare> tmpRes;
-//                    set_union(first_set[i].begin(), first_set[i].end(), tmpFirst.begin(), tmpFirst.end(), tmpRes, compare());
-//                    first_set[i] = tmpRes;
-//                }
-//            }
-//        }
-//        first_cal[i] = true;
-//    }
-//    return first_set[i];
-//}
+SymbolSet first(string symbol) {
+    if (!first_cal[i] == true) {
+        char ch = product[i][0];
+        if (notion_map.find(ch) == notion_map.end()) {
+            first_set[i].insert(ch);
+        } else {
+            pair<multimap<char, int>::iterator, multimap<char, int>::iterator> not_pro = notion_map.equal_range(ch);
+            for(it_map = not_pro.first; it_map != not_pro.second; it_map++){
+                int no_pro = it_map->second;
+                if (none[i]) {
+                    set<char, compare> tmpFirst = first(no_pro);
+                    set<char, compare> tmpRes;
+                    set_union(first_set[i].begin(), first_set[i].end(), tmpFirst.begin(), tmpFirst.end(), tmpRes, compare());
+                    first_set[i] = tmpRes;
+                } else {
+                    first_set[i].erase('_');
+                    set<char, compare> tmpFirst = first(no_pro);
+                    set<char, compare> tmpRes;
+                    set_union(first_set[i].begin(), first_set[i].end(), tmpFirst.begin(), tmpFirst.end(), tmpRes, compare());
+                    first_set[i] = tmpRes;
+                }
+            }
+        }
+        first_cal[i] = true;
+    }
+    return first_set[i];
+}
 
 int main()
 {
