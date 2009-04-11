@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1238478916 source:d:\zxd\myyacc\main.cpp
+	<iostream>
+	<vector>
+	<map>
+
+1238716464 source:f:\zxd\projects\canto\yokoso\main.cpp
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<string>
+	"globaldef.h"
+	"Nonterminal.h"
+
+1238716255 f:\zxd\projects\canto\yokoso\globaldef.h
+
+1238716086 f:\zxd\projects\canto\yokoso\nonterminal.cpp
+
+1238716111 source:f:\zxd\projects\canto\yokoso\nonterminal.cpp
+
+1238716513 f:\zxd\projects\canto\yokoso\nonterminal.h
+
+1238744716 source:e:\zxd\yokoso\main.cpp
+	"globaldef.h"
+	"Nonterminal.h"
+
+1238744265 e:\zxd\yokoso\globaldef.h
+	<iostream>
+	<vector>
+	<map>
+	<set>
+	<string>
+
+1238744633 e:\zxd\yokoso\nonterminal.cpp
+	"globaldef.h"
+
+1238745669 e:\zxd\yokoso\nonterminal.h
+
