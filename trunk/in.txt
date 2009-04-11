@@ -1,8 +1,0 @@
-7
-E 2 T A
-A 3 + T A
-T 2 F B
-B 3 *  F B
-F 3 ( E )
-F 1 i
-F 1 n
